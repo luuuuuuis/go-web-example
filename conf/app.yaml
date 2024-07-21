@@ -1,0 +1,24 @@
+---
+server:
+  base:
+    app_name: "gjob-admin"
+    app_mode: "debug"
+    listen_addr: ":8080"
+
+mysql:
+  base:
+    dsn: "luis:qwe123@tcp(127.0.0.1:3306)/gjob?charset=utf8mb4&parseTime=True&loc=Local"
+  config:
+    maxIdleConns: 10
+    maxOpenConns: 100
+
+redis:
+  base:
+    addr: "localhost:6379"
+    password: "qwe123"
+    db: "1"
+  config:
+    maxIdle: 10
+    maxActive: 5
+    idleTimeout: 100
+  
